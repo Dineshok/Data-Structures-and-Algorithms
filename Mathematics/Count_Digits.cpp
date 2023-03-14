@@ -17,6 +17,7 @@ int main()
     
     int num;
     cin >> num ;
+    /*We are using 'num' as our Input */
     int numdigit = digits(num);
     cout << numdigit;
     
