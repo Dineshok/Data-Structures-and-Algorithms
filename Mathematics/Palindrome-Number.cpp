@@ -16,12 +16,7 @@ bool palindrome(int a)
         b=b/10;
         rev=rev*10+n;
     }
-    if(rev==a){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return (rev==a);
 }
 int main()
 {
