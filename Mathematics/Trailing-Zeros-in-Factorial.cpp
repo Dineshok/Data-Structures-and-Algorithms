@@ -4,7 +4,7 @@ using namespace std;
 int trailingZerosInFactorial(int a){
     int res = 0;
     for(int i=5; i<=a; i=i*5){
-        res=res+a/5;
+        res=res+a/i;
     }
     return res;
 }
