@@ -1,14 +1,13 @@
 #include<iostream>
 using namespace std;
 bool prime(int a){
-    int n=0;
-    for(int i=a; i>=1; i--){
-        if(a%i==0){
-            n=n+1;
-        }
+    if(a==1) return false;
+    if(a==2||a==3) return true;
+    if(a%2==0||a%2==0) return false;
+    for(int i=5;i*i<=a; i=i+6){
+        if(a%i==0||a%(i+2)==0) return false;
     }
-    if(n==2) return true;
-    else return false;
+    return true;
 }
 int main()
 {
